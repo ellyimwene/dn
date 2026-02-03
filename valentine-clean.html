@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Special 💝</title>
+    <link rel="stylesheet" href="valentine.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background-animation"></div>
+
+        <!-- Stage 1: Introduction -->
+        <div class="stage stage-1 active">
+            <div class="stage-1-content">
+                <h1>Hey My Love 😊</h1>
+                <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: #ffe6f0;">It's Elly here,<br>your one and only ✨</p>
+                <p>I have something special<br>I want to ask you…</p>
+                <p style="font-size: 1.3rem; margin-top: 1.5rem;">Are you ready?</p>
+                <button class="btn btn-yes" onclick="nextStage()">Yes, show me ❤️</button>
+            </div>
+        </div>
+
+        <!-- Stage 2: Valentine Question -->
+        <div class="stage stage-2">
+            <div class="stage-2-content">
+                <h1>Will you be my<br>Valentine? 💝</h1>
+                <button class="btn btn-yes" onclick="nextStage()">YES 😍</button>
+                <button class="btn btn-no" id="noBtn" onclick="runAwayBtn()">NO</button>
+            </div>
+        </div>
+
+        <!-- Stage 3: Love Message -->
+        <div class="stage stage-3">
+            <div class="pulse-bg"></div>
+            <div class="stage-3-content">
+                <p>From the moment you came into my life,<br>
+                   everything became brighter.<br><br>
+                   You mean more to me than words can say.<br><br>
+                   Every day with you is a gift,<br>
+                   and I can't imagine my life without you.</p>
+                <button class="btn btn-next" onclick="nextStage()">One more thing 💖</button>
+            </div>
+        </div>
+
+        <!-- Stage 4: WhatsApp Confirmation -->
+        <div class="stage stage-4">
+            <div class="stage-4-content">
+                <p>Say it back… I'd love to hear it from you ❤️</p>
+                <a class="btn btn-whatsapp" href="https://wa.me/0113750027?text=I%20love%20you%20%E2%9D%A4%EF%B8%8F" target="_blank">
+                    Send 'I love you ❤️' on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio for background music -->
+    <audio id="bgMusic" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/07/06/audio_a0181967bc.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music toggle button -->
+    <div class="music-toggle" id="musicToggle" onclick="toggleMusic()">🔊</div>
+
+    <!-- Footer -->
+    <div class="footer">
+        ✨ Designed by <strong>Sekstet Solutions</strong> | For designs like this, reach us at <a href="mailto:elvisimwene27@gmail.com">elvisimwene27@gmail.com</a> ✨
+    </div>
+
+    <!-- JavaScript -->
+    <script src="valentine.js"></script>
+</body>
+</html>
